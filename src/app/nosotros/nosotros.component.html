@@ -1,0 +1,11 @@
+<h2>Nosotros</h2>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur necessitatibus consequatur, maxime velit quibusdam, provident voluptatem tempore sequi quo quisquam expedita nemo officiis hic repellendus doloremque? Accusamus amet sit, recusandae asperiores maxime perspiciatis rem neque illo similique? Sint, illo?
+</p>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of equipo, index as i"><h6>{{item.nombre}}</h6>
+    <h6>{{item.especialidad}}</h6>
+    <a [routerLink]="['/equipo/',i]">Leer Mas...</a>
+  </li>
+</ul>
